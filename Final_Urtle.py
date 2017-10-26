@@ -10,9 +10,7 @@ eli = Turtle()
 dunlap = Turtle()
 
 chase = Turtle()
-chase.color(
-    15 / 255, 215 / 255, 15 / 155
-)
+chase.color(15 / 255, 215 / 255, 15 / 155)
 chase.shape("turtle")
 
 #helper functions
@@ -48,6 +46,8 @@ def reset():
 def get_choice():
     print(" ")
     choice = input("Do you want to move with the arrow keys or mouse click? 'k for keys' 'm for mouse'")
+    print(" ")
+    print("Thanks! Remember pressing 'r' will boot the program with only the controlable Turtle.")
     if choice == 'k':
         return 1
     elif choice == 'm':
